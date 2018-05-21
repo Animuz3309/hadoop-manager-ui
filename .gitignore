@@ -8,3 +8,5 @@ webpack-stats.json
 npm-debug.log
 /nbproject/
 /target/
+package-lock.json
+
