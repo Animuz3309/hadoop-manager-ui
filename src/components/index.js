@@ -36,5 +36,8 @@ export NodesList from './nodes/NodesList';
 /* settings */
 export UploadSettings from './settings/UploadSettings';
 
+/* users */
+export UsersList from './users/UsersList';
+
 export MenuLeft from "./MenuLeft/MenuLeft";
 export Navbar from "./Navbar/Navbar";

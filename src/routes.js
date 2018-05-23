@@ -9,7 +9,9 @@ import {
   LoginSuccess,
   NotFound,
   SettingsPanel,
+  UsersPanel,
   AgentPanel,
+  UserPassChange
 } from 'containers';
 
 export default (store) => {
@@ -56,7 +58,9 @@ export default (store) => {
         <Route name="Nodes" path="nodes" component={NodesPanel}/>
         <Route name="Nodes" path="clusters/:name/nodes" component={NodesPanel}/>
         <Route name="Settings" path="settings" component={SettingsPanel}/>
+        <Route name="Users" path="users" component={UsersPanel}/>
         <Route name="Agent" path="agent" component={AgentPanel}/>
+        <Route name="My Account" path="my_account" component={UserPassChange}/>
       </Route>
 
 			{ /* Public Routes */ }

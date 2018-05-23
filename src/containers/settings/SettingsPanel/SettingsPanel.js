@@ -67,19 +67,19 @@ export default class SettingsPanel extends Component {
       <div>
         <Helmet title="Settings"/>
         <h4>
-          <a href="https://github.com/codeabovelab/haven-platform" target="_blank">Haven</a>&nbsp;
+          <a href="#" target="_blank">hm</a>&nbsp;
         </h4>
         <h4>
-          <a className="github-button" href="https://github.com/codeabovelab/haven-platform"
+          <a className="github-button" href="#"
              data-icon="octicon-star" data-style="mega"
-             data-count-href="/codeabovelab/haven-platform/stargazers"
-             data-count-api="/repos/codeabovelab/haven-platform#stargazers_count"
-             data-count-aria-label="# stargazers on GitHub" aria-label="Star codeabovelab/haven-platform on GitHub">
+             data-count-href="#"
+             data-count-api="#"
+             data-count-aria-label="# stargazers on GitHub" aria-label="#">
             Star
           </a>
         </h4>
         <div className="settingsList">
-          <p>Version: <a target="_blank" href={"https://github.com/codeabovelab/haven-platform/commit/" + version.buildRevision}>{version.version}</a></p>
+          <p>Version: <a target="_blank" href={"#" + version.buildRevision}>{version.version}</a></p>
           <p>Build Time: <span>{TimeUtils.format(version.buildTime)}</span></p>
           <div className = "settings-buttons-block">
             <a id="downloadSettingsFile" className="btn btn-default" onClick={this.getSettingsFile.bind(this)}>
@@ -103,7 +103,7 @@ export default class SettingsPanel extends Component {
       const settingsFile = this.props.settings.settingsFile;
       let wholeSettings = {version: settingsFile.version, date: settingsFile.date, data: settingsFile.data};
       let parsedData = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(wholeSettings));
-      downloadFile(parsedData, 'haven-settings.json');
+      downloadFile(parsedData, 'hm-settings.json');
     }).catch(()=>null);
   }
 

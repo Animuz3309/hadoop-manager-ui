@@ -17,3 +17,8 @@ export NodeAdd from './nodes/NodeAdd/NodeAdd';
 
 /* setting */
 export SettingsPanel from './settings/SettingsPanel/SettingsPanel';
+
+/* users */
+export UsersPanel from './users/UsersPanel/UsersPanel';
+export UserAdd from './users/UserAdd/UserAdd';
+export UserPassChange from './users/UserPassChange/UserPassChange';
