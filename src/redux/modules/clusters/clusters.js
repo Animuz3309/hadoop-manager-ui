@@ -156,6 +156,22 @@ export function deleteCluster(clusterId) {
   };
 }
 
+export function getClusterSource(clusterId) {
+  return {
+    types: [ACTIONS.GET_SOURCE, ACTIONS.GET_SOURCE_SUCCESS, ACTIONS.GET_SOURCE_FAIL],
+    id: clusterId,
+    promise: (client) => client.get(`/api/clusters/${clusterId}/source`)
+  };
+}
+
+export function setClusterSource(clusterId, file) {
+  return {
+    types: [ACTIONS.SET_SOURCE, ACTIONS.SET_SOURCE_SUCCESS, ACTIONS.SET_SOURCE_FAIL],
+    id: clusterId,
+    promise: (client) => client.post(`/api/clusters/${clusterId}/source`, {data: file, contentType: "application/x-yaml"})
+  };
+}
+
 export function clusterInformation(clusterId) {
   return {
     types: [ACTIONS.INFORMATION, ACTIONS.INFORMATION_SUCCESS, ACTIONS.INFORMATION_FAIL],
@@ -198,5 +214,14 @@ export function loadClusterRegistries(clusterId) {
     types: [ACTIONS.LOAD_CLUSTER_REGISTRIES, ACTIONS.LOAD_CLUSTER_REGISTRIES_SUCCESS, ACTIONS.LOAD_CLUSTER_REGISTRIES_FAIL],
     id: clusterId,
     promise: (client) => client.get(`/api/clusters/${clusterId}/registries`)
+  };
+}
+
+export function uploadCompose(clusterId, file) {
+  let formData = new FormData();
+  formData.append( "data", file);
+  return {
+    types: [ACTIONS.UPLOAD_COMPOSE, ACTIONS.UPLOAD_COMPOSE_SUCCESS, ACTIONS.UPLOAD_COMPOSE_FAIL],
+    promise: (client) => client.post(`/api/clusters/${clusterId}/compose`, {data: formData})
   };
 }

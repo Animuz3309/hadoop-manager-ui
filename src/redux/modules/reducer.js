@@ -20,6 +20,7 @@ import events from './events/events';
 import settings from './settings/settings';
 import users from './users/users';
 import errors from './errors/errors';
+import networks from './networks/networks';
 
 export default combineReducers({
   routing: routerReducer,
@@ -36,6 +37,7 @@ export default combineReducers({
   events,
   settings,
   users,
+  networks,
   // End models data
   imagesUI,
   registriesUI,

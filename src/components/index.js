@@ -26,12 +26,25 @@ export ClusterInformation from './clusters/ClusterInformation';
 export ClusterRegistriesDialog from './clusters/ClusterRegistriesDialog';
 export ClusterSetSource from './clusters/ClusterSetSource';
 export ClustersList from './clusters/ClustersList';
+export ClusterUploadCompose from './clusters/ClusterUploadCompose';
 export DashboardClustersList from "./clusters/DashboardClustersList";
+
+/* containers */
+export ContainerLog from './containers/ContainerLog/ContainerLog';
+export ContainerDetails from './containers/ContainerDetails/ContainerDetails';
+export ContainerStatistics from './containers/ContainerStatistics/ContainerStatistics';
+
+/* images */
+export ImagesList from './images/ImagesList';
+export ImageInfo from './images/ImageInfo';
 
 /* nodes */
 export DashboardNodesList from "./nodes/DashboardNodesList/DashboardNodesList";
 export NodeInfo from './nodes/NodeInfo';
 export NodesList from './nodes/NodesList';
+
+/* registires */
+export RegistriesList from './registries/RegistriesList';
 
 /* settings */
 export UploadSettings from './settings/UploadSettings';

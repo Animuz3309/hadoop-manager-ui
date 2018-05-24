@@ -1,0 +1,14 @@
+.container-log {
+  white-space: pre;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  color: #ffffff;
+  background-color: #000000;
+  font-size: 0.8em;
+  width: 100%;
+  min-height: 500px;
+  margin: 0;
+  resize: both;
+  overflow: auto;
+  box-sizing: border-box;
+  flex-grow:1;
+}

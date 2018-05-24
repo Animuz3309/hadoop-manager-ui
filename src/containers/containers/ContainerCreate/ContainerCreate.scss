@@ -1,0 +1,39 @@
+.containerCreate {
+  label {
+    margin-bottom: 0;
+  }
+  :global(.field-publish), :global(.field-environment), :global(.field-restart) {
+    margin-top: 1rem;
+    :global(.field-header) {
+      border-bottom: 1px solid #666;
+      a {
+        margin-left: 0.5rem;
+      }
+    }
+    :global(.field-body) {
+      :global(.row) {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  :global(.field-environment), :global(.field-restart) {
+    margin-top: 2rem;
+  }
+}
+:global(.preIcon) {
+  input {
+    display: inline-block !important;
+    width: 99.8%;
+    margin: 0!important;
+  }
+}
+:global(.iconContainer) {
+  width: 0.2%;
+  float: right;
+  height: 34px;
+  a {
+    line-height: 34px;
+    cursor: pointer;
+  }
+}
